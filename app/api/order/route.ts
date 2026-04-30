@@ -38,7 +38,7 @@ const DAY_MS = 24 * 60 * 60 * 1000; // 24 hours
 // Clean old entries periodically
 function cleanupRateLimits() {
   const now = Date.now();
-  for (const [ip, entry] of rateLimitStore.entries()) {
+  for (const [ip, entry] of Array.from(rateLimitStore.entries())) {
     if (now - entry.firstUse > DAY_MS) {
       rateLimitStore.delete(ip);
     }
