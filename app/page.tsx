@@ -500,8 +500,8 @@ function LandingPage({ onGetStarted }: { onGetStarted: () => void }) {
           variants={fadeUp}
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
-          Get 500 free views on any Instagram Reel instantly. No login required.
           Boost your reach and engagement effortlessly.
+          No login required.
         </motion.p>
 
         <motion.div
