@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 // ============================
 // CONFIGURATION
 // ============================
-const DISCORD_SERVER_URL = 'https://discord.gg/YOUR_SERVER_INVITE';
+const DISCORD_SERVER_URL = 'https://discord.gg/6bXjQA2tPw';
 // The actual API key and webhook URLs are handled server-side
 
 // ============================
@@ -171,7 +171,7 @@ function Navbar({ onBack, showBack }: { onBack?: () => void; showBack?: boolean 
             Back
           </button>
         )}
-        <span className="nav-logo">⚡ InstaBoost</span>
+        <span className="nav-logo">⚡ ViralGram</span>
       </div>
       <a
         href={DISCORD_SERVER_URL}
@@ -423,7 +423,7 @@ function BuyPremiumModal({ onClose }: { onClose: () => void }) {
           </span>
         </h2>
         <p className="modal-subtitle">
-          Unlock the full power of InstaBoost with a Premium membership.
+          Unlock the full power of ViralGram with a Premium membership.
         </p>
 
         <ul className="premium-benefits">
@@ -481,7 +481,7 @@ function LandingPage({ onGetStarted }: { onGetStarted: () => void }) {
         >
           <div className="hero-badge">
             <span className="hero-badge-dot" />
-            Now available — Free Instagram Views
+            Now available — No Credit Card Required
           </div>
         </motion.div>
 
@@ -490,7 +490,7 @@ function LandingPage({ onGetStarted }: { onGetStarted: () => void }) {
           variants={fadeUp}
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
-          Grow Your Instagram
+          Boost Your Content
           <br />
           <span className="gradient-text">With Real Views</span>
         </motion.h1>
