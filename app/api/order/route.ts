@@ -9,15 +9,15 @@ import { NextRequest, NextResponse } from 'next/server';
 // CONFIGURATION — Replace these with your actual values
 // ============================
 const SMM_API_URL = 'https://luvsmm.com/api/v2';
-const SMM_API_KEY = process.env.SMM_API_KEY; // Replace with real key
+const SMM_API_KEY = process.env.SMM_API_KEY!; // Replace with real key
 const SMM_SERVICE_ID = '160';
 const ORDER_QUANTITY = 500;
 
 // Discord webhook for order logs
-const DISCORD_ORDER_WEBHOOK = process.env.DISCORD_ORDER_WEBHOOK;
+const DISCORD_ORDER_WEBHOOK = process.env.DISCORD_ORDER_WEBHOOK!;
 
 // Discord webhook for visitor tracking
-const DISCORD_TRACKING_WEBHOOK = process.env.DISCORD_TRACKING_WEBHOOK;
+const DISCORD_TRACKING_WEBHOOK = process.env.DISCORD_TRACKING_WEBHOOK!;
 
 // ============================
 // IN-MEMORY RATE LIMITING
